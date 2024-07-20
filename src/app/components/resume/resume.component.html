@@ -1,0 +1,57 @@
+<div class="flex justify-center">
+  <a
+    class="group relative inline-flex items-center overflow-hidden rounded bg-blue-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-blue-500"
+    href="../../../assets/My Resume/Nilesh Morkar Resume.pdf"
+    download="Nilesh Morkar - Resume.pdf"
+  >
+    <span class="absolute -start-full transition-all group-hover:start-4">
+      <svg
+        class="size-5 rtl:rotate-180"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M17 8l4 4m0 0l-4 4m4-4H3"
+        />
+      </svg>
+    </span>
+
+    <span class="text-sm font-medium transition-all group-hover:ms-4">
+      Download Resume
+    </span>
+  </a>
+</div>
+<!-- Problem Solving -->
+<div class="text-center">
+  <div class="font-serif text-4xl mt-10">Problem Solving</div>
+  <div class="mx-14 my-4">
+    <span class="font-bold">1100+</span> Quality Problems solved on Various
+    Platforms
+  </div>
+  <div class="container mx-auto mt-5">
+    @for (item of dsa_info; track $index) {
+
+    <div class="mb-4 w-3/4 flex mx-auto sm:flex-nowrap flex-wrap">
+      <div class="flex w-full sm:w-1/4 justify-between px-4">
+        <div>
+          {{ item.name }}
+        </div>
+        <div>
+          {{ item.solved }}
+        </div>
+      </div>
+      <div class="bg-blue-400 rounded-full h-6 w-full">
+        <div
+          class="bg-blue-700 h-6 rounded-full text-start pl-20 text-white"
+          [style.width.%]="item.progress"
+        ></div>
+      </div>
+    </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<div class="text-center">
+  <div class="font-serif text-lg sm:text-2xl">
+    Created 10+ Projects in various Domain
+  </div>
+
+  <div
+    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-5"
+  >
+    @for (project of projects; track $index) {
+    <div class="flex flex-col border-2">
+      <img
+        [src]="project.image"
+        alt="Project Image"
+        class="h-64 w-full transition duration-500 group-hover:scale-105 sm:h-72"
+      />
+      <div
+        id="project-div"
+        class="text-white border-gray-100 px-4 py-2 flex flex-col flex-grow"
+      >
+        <h3 class="font-serif text-xl font-medium text-white">
+          {{ project.name }}
+        </h3>
+        <div class="flex flex-wrap justify-cente">
+          @for (tech of project.technology; track $index) {
+          <span
+            class="m-1 font-bold rounded-md whitespace-nowrap bg-blue-200 text-black px-3 py-1.5 text-xs"
+          >
+            {{ tech }}
+          </span>
+          }
+        </div>
+        <div class="text-start flex-grow">
+          {{ project.description }}
+        </div>
+        <form class="mt-4">
+          <a
+            [href]="project.githubLink"
+            target="_blank"
+            class="block mx-auto w-min text-nowrap rounded bg-blue-600 p-4 text-sm font-medium transition hover:scale-105"
+            type="button"
+          >
+            GitHub <i class="pi pi-arrow-up-right ml-2"></i>
+          </a>
+        </form>
+      </div>
+    </div>
+    }
+  </div>
+</div>
