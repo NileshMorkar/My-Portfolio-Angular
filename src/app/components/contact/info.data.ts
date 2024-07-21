@@ -16,7 +16,7 @@ export const MyInfo: Info[] = [
         value: "Pune, Mah - 411035",
         iconName: "pi pi-home",
     }, {
-        name: "Linkdln",
+        name: "LinkedIn",
         value: "nilesh-morkar-a740b622a/",
         iconName: "pi pi-linkedin",
         link: "https://www.linkedin.com/in/nilesh-morkar-a740b622a/"

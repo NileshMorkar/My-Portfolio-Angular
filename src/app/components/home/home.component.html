@@ -33,11 +33,11 @@
 
 <!-- Skills -->
 <div class="text-center pt-20 pb-10" id="skills-con">
-  <div class="text-4xl">Skills</div>
+  <div class="text-4xl mb-4">Skills</div>
   <div class="text-xl text-blue-400 p-2 m-2 underline">
     Data Structures and Algorithms, App Development, Web Development
   </div>
-  <div class="flex justify-center flex-wrap *:w-80">
+  <div class="flex justify-center gap-4 flex-wrap *:w-80">
     <div class="border-b-2 md:border-b-0 md:border-r-2 border-blue-600 p-4">
       <div class="text-2xl py-2 underline underline-offset-8">
         Programming Language
@@ -70,7 +70,7 @@
 </div>
 
 <!-- Problem Solving -->
-<div class="text-center p-12" id="problem-solving-con">
+<div class="text-center p-8" id="problem-solving-con">
   <div class="font-serif text-4xl mt-10">Problem Solving</div>
   <div class="mx-14 my-4">
     <span class="font-bold">1100+</span> Quality Problems solved on Various
@@ -79,7 +79,7 @@
   <div class="container mx-auto mt-5">
     @for (item of dsa_info; track $index) {
 
-    <div class="mb-4 w-3/4 flex mx-auto sm:flex-nowrap flex-wrap">
+    <div class="mb-4 sm:w-3/4 flex mx-auto sm:flex-nowrap flex-wrap">
       <div class="flex w-full sm:w-1/4 justify-between px-4">
         <div>
           {{ item.name }}
@@ -90,7 +90,7 @@
       </div>
       <div class="bg-blue-400 rounded-full h-6 w-full">
         <div
-          class="bg-blue-700 h-6 rounded-full text-start pl-20 text-white"
+          class="bg-blue-700 h-6 rounded-full text-start text-white"
           [style.width.%]="item.progress"
         ></div>
       </div>
