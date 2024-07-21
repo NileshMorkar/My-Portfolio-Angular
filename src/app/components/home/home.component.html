@@ -1,7 +1,16 @@
 <!-- About -->
-<div id="about">
+<div id="about" class="flex flex-wrap justify-center">
   <div
-    class="my-8 mx-4 sm:w-1/2 group text-lg border rounded-lg p-5 sm:mx-auto hover:bg-slate-800"
+    class="m-8 sm:ml-32 size-56 bg-blue-300 flex justify-center items-center rounded-3xl"
+  >
+    <img
+      src="../../../assets/My Resume/NM.png"
+      alt="Profile Image"
+      class="rounded-full size-52 hover:shadow-blue-400 shadow-xl transition shadow-blue-600"
+    />
+  </div>
+  <div
+    class="m-4 h-min my-auto sm:w-1/2 group text-lg border rounded-lg p-5 sm:mx-auto hover:bg-slate-800"
   >
     I am currently pursuing
     <span class="group-hover:text-red-600 group-hover:transition"
@@ -60,6 +69,36 @@
   </div>
 </div>
 
+<!-- Problem Solving -->
+<div class="text-center p-12" id="problem-solving-con">
+  <div class="font-serif text-4xl mt-10">Problem Solving</div>
+  <div class="mx-14 my-4">
+    <span class="font-bold">1100+</span> Quality Problems solved on Various
+    Platforms
+  </div>
+  <div class="container mx-auto mt-5">
+    @for (item of dsa_info; track $index) {
+
+    <div class="mb-4 w-3/4 flex mx-auto sm:flex-nowrap flex-wrap">
+      <div class="flex w-full sm:w-1/4 justify-between px-4">
+        <div>
+          {{ item.name }}
+        </div>
+        <div>
+          {{ item.solved }}
+        </div>
+      </div>
+      <div class="bg-blue-400 rounded-full h-6 w-full">
+        <div
+          class="bg-blue-700 h-6 rounded-full text-start pl-20 text-white"
+          [style.width.%]="item.progress"
+        ></div>
+      </div>
+    </div>
+    }
+  </div>
+</div>
+
 <!-- Education -->
 <div id="edu-con" class="pt-20 pb-10">
   <div class="p-4">
@@ -106,7 +145,7 @@
           class="relative p-4 my-6 text-gray-800 hover:shadow-blue-800 shadow-lg bg-white rounded-xl col-start-6 col-end-10 mr-auto"
         >
           <h3 class="text-lg font-semibold lg:text-xl">High School</h3>
-          <p class="">90% (CBSE)</p>
+          <p class="">90% (12th CBSE)</p>
           <p class="mt-1 leading-6">
             Atma Malik International School Kokamthan, Nagar, Mah.
           </p>
@@ -122,7 +161,7 @@
           class="relative p-4 my-6 hover:shadow-blue-800 shadow-lg text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto"
         >
           <h3 class="text-lg font-semibold lg:text-xl">School</h3>
-          <p class="">92.80% (SSC)</p>
+          <p class="">92.80% (10th SSC)</p>
           <p class="mt-1 leading-6">
             L.S.B Waje Vidyalaya Sinnar, Nashik, Mah.
           </p>

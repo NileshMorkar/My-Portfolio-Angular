@@ -9,6 +9,12 @@ interface Skills {
     other: string[]
 }
 
+interface Dsa {
+    name: string;
+    progress: number;
+    solved: number;
+}
+
 @Component({
     selector: 'app-home',
     standalone: true,
@@ -18,6 +24,31 @@ interface Skills {
 
 })
 export class HomeComponent {
+    leetcodeSolved: number = 400;
+    gfgSolved: number = 550;
+    maxProblems: number = 1000;
+
+    leetcodeProgress = 70;
+    gfgProgress = 90;
+
+
+    dsa_info: Dsa[] = [
+        {
+            name: "GFG",
+            progress: 90,
+            solved: 551
+        },
+        {
+            name: "LeetCode",
+            progress: 74,
+            solved: 385
+        },
+        {
+            name: "Other",
+            progress: 28,
+            solved: 154
+        },
+    ];
 
     skills: Skills = {
         frameworks: ["Spring", "SpringBoot", "Asp .Net Core 8", "Flutter", "Angular 17", "Hibernate",],

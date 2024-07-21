@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { NavigationEnd, Router, RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-nav',
@@ -9,5 +9,13 @@ import { RouterModule } from '@angular/router';
     styleUrl: './nav.component.scss'
 })
 export class NavComponent {
+    constructor(private router: Router) { }
 
+    ngOnInit() {
+        this.router.events.subscribe((event) => {
+            if (event instanceof NavigationEnd) {
+                window.scrollTo(0, 0);
+            }
+        });
+    }
 }

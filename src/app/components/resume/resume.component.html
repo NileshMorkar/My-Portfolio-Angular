@@ -26,32 +26,4 @@
     </span>
   </a>
 </div>
-<!-- Problem Solving -->
-<div class="text-center">
-  <div class="font-serif text-4xl mt-10">Problem Solving</div>
-  <div class="mx-14 my-4">
-    <span class="font-bold">1100+</span> Quality Problems solved on Various
-    Platforms
-  </div>
-  <div class="container mx-auto mt-5">
-    @for (item of dsa_info; track $index) {
-
-    <div class="mb-4 w-3/4 flex mx-auto sm:flex-nowrap flex-wrap">
-      <div class="flex w-full sm:w-1/4 justify-between px-4">
-        <div>
-          {{ item.name }}
-        </div>
-        <div>
-          {{ item.solved }}
-        </div>
-      </div>
-      <div class="bg-blue-400 rounded-full h-6 w-full">
-        <div
-          class="bg-blue-700 h-6 rounded-full text-start pl-20 text-white"
-          [style.width.%]="item.progress"
-        ></div>
-      </div>
-    </div>
-    }
-  </div>
-</div>
+<!-- Certificates -->

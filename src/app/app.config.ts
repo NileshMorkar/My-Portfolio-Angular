@@ -7,3 +7,5 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 export const appConfig: ApplicationConfig = {
     providers: [provideRouter(routes), { provide: LocationStrategy, useClass: HashLocationStrategy }]
 };
+//Imp For Routing
+// { provide: LocationStrategy, useClass: HashLocationStrategy }

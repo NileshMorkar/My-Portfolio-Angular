@@ -1,3 +1,84 @@
+<!-- Filters -->
+<div id="filter-con" class="py-2 my-6">
+  <div class="">
+    <button
+      class="border p-2 ml-6 mb-4 hover:text-blue-400 rounded-md"
+      type="button"
+      (click)="isCollapsed = !isCollapsed"
+    >
+      Filter
+    </button>
+    @if(filterSet.size >= 1){
+    <button
+      class="border p-2 ml-6 mb-4 hover:text-blue-400 rounded-md"
+      type="button"
+      (click)="onResetClick()"
+    >
+      Reset
+    </button>
+
+    }
+  </div>
+  @if (isCollapsed) {
+
+  <div class="grid grid-cols-3 gap-1 sm:gap-2 p-4 sm:w-1/2 px-6">
+    <div>
+      <div class="text-start font-bold mb-2">Languages:</div>
+      @for (lan of filters.languges; track $index) {
+      <div class="flex items-center mb-2">
+        <input
+          type="checkbox"
+          id="{{ lan }}"
+          (change)="filter(lan)"
+          class="mr-2"
+        />
+        <label for="{{ lan }}" class="hover:text-blue-500">{{ lan }}</label>
+      </div>
+      }
+    </div>
+    <div>
+      <div class="text-start font-bold mb-2">Frameworks:</div>
+      @for (framework of filters.frameworks; track $index) {
+      <div class="flex items-center mb-2">
+        <input
+          type="checkbox"
+          id="{{ framework }}"
+          (change)="filter(framework)"
+          class="mr-2"
+        />
+        <label for="{{ framework }}" class="hover:text-blue-500">{{
+          framework
+        }}</label>
+      </div>
+      }
+    </div>
+    <div>
+      <div class="text-start font-bold mb-2">Database:</div>
+      @for (database of filters.databases; track $index) {
+      <div class="flex items-center mb-2">
+        <input
+          type="checkbox"
+          id="{{ database }}"
+          (change)="filter(database)"
+          class="mr-2"
+        />
+        <label for="{{ database }}" class="hover:text-blue-500">{{
+          database
+        }}</label>
+      </div>
+      }
+    </div>
+  </div>
+  }
+</div>
+
+<!-- Projects -->
+@if(projects.length == 0){
+
+<p class="text-center text-xl">No Project Found !!</p>
+
+}@else{
+
 <div class="text-center">
   <div class="font-serif text-lg sm:text-2xl">
     Created 10+ Projects in various Domain
@@ -47,3 +128,5 @@
     }
   </div>
 </div>
+
+}

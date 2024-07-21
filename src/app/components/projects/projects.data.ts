@@ -1,12 +1,12 @@
 import { Project } from "./project.type";
 
-export const projects: Project[] = [
+export const projectsData: Project[] = [
     {
         name: "Electronic Store Backend",
-        description: "A backend for an electronic store that allows users to create, read, update and delete products and orders. It is built with SpringBoot, MySql and Hibernate. It uses JWT for authentication and authorization. It also uses Bcrypt for password hashing.",
+        description: "A backend for an electronic store that allows users to create, read, update and delete products and orders. It is built with SpringBoot, MySQL and Hibernate. It uses JWT for authentication and authorization. It also uses Bcrypt for password hashing.",
         image: "../../assets/projects_images/electronic_store.webp",
         githubLink: "https://github.com/NileshMorkar/Electronic-Store-Backend-SpringBoot",
-        technology: ["Java", "SpringBoot", "MySql",
+        technology: ["Java", "SpringBoot", "MySQL",
             "JWT", "Hibernate", "Swagger"]
     },
     {
@@ -14,14 +14,14 @@ export const projects: Project[] = [
         description: "Implemented appointment management system allowing doctors to view and manage appointments. Enabled patients to schedule appointments. Patients can securely store and access their medical history, create personalized folders, and store prescriptions.",
         image: "../../assets/projects_images/hospital.jpeg",
         githubLink: "https://github.com/NileshMorkar/Hospital-Management-Backend",
-        technology: ["Java", "SpringBoot", "JWT", "MySql", "Hibernate", "Spring Security", "Swagger"]
+        technology: ["Java", "SpringBoot", "JWT", "MySQL", "Hibernate", "Spring Security", "Swagger"]
     },
     {
         name: "Job Portal Backend",
         description: "Designed and implemented functionalities for job seekers to browse job listings, apply for jobs, and track their application status. Created features for recruiters to post job listings, view applicant profiles, and manage job applications efficiently.",
         image: "../../assets/projects_images/job.jpeg",
         githubLink: "https://github.com/NileshMorkar/Job-Portal-Backend",
-        technology: ["Java", "Spring", "SpringBoot", "MySql", "Hibernate", "Swagger"]
+        technology: ["Java", "Spring", "SpringBoot", "MySQL", "Hibernate", "Swagger"]
     },
     {
         name: "Recipe Route Flutter App",

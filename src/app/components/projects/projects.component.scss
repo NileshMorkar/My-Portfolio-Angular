@@ -1,3 +1,9 @@
 #project-div {
   background-color: rgba(79, 77, 77, 0.274);
 }
+#filter-con {
+  background-color: rgba(2, 0, 5);
+}
+input[type="checkbox"] {
+  accent-color: #3b82f6; /* Tailwind's blue-500 color */
+}
