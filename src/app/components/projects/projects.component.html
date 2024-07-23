@@ -113,16 +113,27 @@
         <div class="text-start flex-grow">
           {{ project.description }}
         </div>
-        <form class="mt-4">
+        <div class="flex flex-wrap justify-center gap-6">
           <a
             [href]="project.githubLink"
             target="_blank"
-            class="block mx-auto w-min text-nowrap rounded bg-blue-600 p-4 text-sm font-medium transition hover:scale-105"
+            class="mt-4 text-nowrap rounded bg-blue-500 p-3 text-base font-medium transition hover:scale-105"
             type="button"
           >
             GitHub <i class="pi pi-arrow-up-right ml-2"></i>
           </a>
-        </form>
+          @if (project.liveLink) {
+
+          <a
+            [href]="project.liveLink"
+            target="_blank"
+            class="mt-4 text-nowrap rounded bg-blue-500 p-3 text-base font-medium transition hover:scale-105 underline underline-offset-2"
+            type="button"
+          >
+            Live Link <i class="pi pi-arrow-up-right ml-2"></i>
+          </a>
+          }
+        </div>
       </div>
     </div>
     }

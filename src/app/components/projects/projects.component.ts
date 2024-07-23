@@ -1,14 +1,9 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { projectsData } from './projects.data';
+import { Project } from './project.type';
 
-interface Project {
-    name: string;
-    description: string;
-    image: string;
-    githubLink: string;
-    technology: string[];
-}
+
 
 interface Filter {
     languges: string[];

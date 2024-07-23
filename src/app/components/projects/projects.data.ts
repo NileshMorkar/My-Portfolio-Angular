@@ -14,7 +14,8 @@ export const projectsData: Project[] = [
         description: "Implemented appointment management system allowing doctors to view and manage appointments. Enabled patients to schedule appointments. Patients can securely store and access their medical history, create personalized folders, and store prescriptions.",
         image: "../../assets/projects_images/hospital.jpeg",
         githubLink: "https://github.com/NileshMorkar/Hospital-Management-Backend",
-        technology: ["Java", "SpringBoot", "JWT", "MySQL", "Hibernate", "Spring Security", "Swagger"]
+        technology: ["Java", "SpringBoot", "JWT", "MySQL", "Hibernate", "Spring Security", "Swagger"],
+        liveLink: "https://hospital-management-backend-n7ck.onrender.com/swagger-ui/index.html"
     },
     {
         name: "Job Portal Backend",
