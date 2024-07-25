@@ -13,6 +13,7 @@ interface Dsa {
     name: string;
     progress: number;
     solved: number;
+    link?: string
 }
 
 @Component({
@@ -36,12 +37,14 @@ export class HomeComponent {
         {
             name: "GFG",
             progress: 90,
-            solved: 551
+            solved: 551,
+            link: "https://www.geeksforgeeks.org/user/nilesh_morkar/"
         },
         {
             name: "LeetCode",
             progress: 74,
-            solved: 385
+            solved: 385,
+            link: "https://leetcode.com/u/Morkar_Nilesh/"
         },
         {
             name: "Other",

@@ -88,12 +88,23 @@
           {{ item.solved }}
         </div>
       </div>
+      @if (item.link) {
+      <a [href]="item.link" target="_blank" class="w-full">
+        <div class="bg-blue-400 rounded-full h-6 w-full hover:cursor-pointer">
+          <div
+            class="bg-blue-700 h-6 rounded-full text-start text-white"
+            [style.width.%]="item.progress"
+          ></div>
+        </div>
+      </a>
+      }@else{
       <div class="bg-blue-400 rounded-full h-6 w-full">
         <div
           class="bg-blue-700 h-6 rounded-full text-start text-white"
           [style.width.%]="item.progress"
         ></div>
       </div>
+      }
     </div>
     }
   </div>
