@@ -36,14 +36,14 @@ export class HomeComponent {
     dsa_info: Dsa[] = [
         {
             name: "GFG",
-            progress: 90,
-            solved: 551,
+            progress: 92,
+            solved: 554,
             link: "https://www.geeksforgeeks.org/user/nilesh_morkar/"
         },
         {
             name: "LeetCode",
             progress: 74,
-            solved: 385,
+            solved: 392,
             link: "https://leetcode.com/u/Morkar_Nilesh/"
         },
         {
@@ -57,7 +57,7 @@ export class HomeComponent {
         frameworks: ["Spring", "SpringBoot", "Asp .Net Core 8", "Flutter", "Angular 17", "Hibernate",],
         programming_languages: ["C/C++", "Java SE", "Java EE", "TypeScript", "JavaScript", "Dart", "C#",],
         databases: ["MySql", "MongoDB", "FireBase", "Redis"],
-        other: ["Swagger UI (Open API)", "Microservices", "HTML", "CSS", "Tailwind", "Software Design Patterns", "Git/Github", "Rest API"]
+        other: ["MicroServices", "Swagger UI", "HTML/CSS/Tailwind CSS", "Software Design Patterns", "Rest API", "Aspect Oriented Programming (AOP)", "Object Oriented Programming (OOPs)", "Git/Github"]
     }
 
 

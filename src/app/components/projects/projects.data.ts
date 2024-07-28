@@ -18,6 +18,14 @@ export const projectsData: Project[] = [
         liveLink: "https://hospital-management-backend-n7ck.onrender.com/swagger-ui/index.html"
     },
     {
+        name: "My Portfolio Website",
+        description: "This is my portfolio website, crafted using Angular. This dynamic site showcases my full-stack development skills, particularly in Angular and Java. It features an interactive projects section And responsive design. The goal is to highlight my technical expertise and ongoing professional growth.",
+        image: "../../assets/projects_images/portfolio.png",
+        githubLink: "https://github.com/NileshMorkar/My-Portfolio-Angular",
+        technology: ["Angular 17", "HTML/CSS", "Tailwind CSS"],
+        liveLink: "https://nilesh-morkar.onrender.com"
+    },
+    {
         name: "Job Portal Backend",
         description: "Designed and implemented functionalities for job seekers to browse job listings, apply for jobs, and track their application status. Created features for recruiters to post job listings, view applicant profiles, and manage job applications efficiently.",
         image: "../../assets/projects_images/job.jpeg",
