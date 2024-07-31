@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 interface Skills {
-    frameworks: string[];
+    "frameworks/Libraries": string[];
     programming_languages: string[];
     databases: string[];
 
@@ -54,10 +54,10 @@ export class HomeComponent {
     ];
 
     skills: Skills = {
-        frameworks: ["Spring", "SpringBoot", "Asp .Net Core 8", "Flutter", "Angular 17", "Hibernate",],
+        "frameworks/Libraries": ["Spring", "SpringBoot", "Asp .Net Core 8", "Flutter", "Angular 17", "Hibernate", "Project Reactor", "Spring WebFlux"],
         programming_languages: ["C/C++", "Java SE", "Java EE", "TypeScript", "JavaScript", "Dart", "C#",],
         databases: ["MySql", "MongoDB", "FireBase", "Redis"],
-        other: ["MicroServices", "Swagger UI", "HTML/CSS/Tailwind CSS", "Software Design Patterns", "Rest API", "Aspect Oriented Programming (AOP)", "Object Oriented Programming (OOPs)", "Git/Github"]
+        other: ["MicroServices", "Reactive Programming", "Swagger UI", "HTML/CSS/Tailwind CSS", "Software Design Patterns", "Rest API", "Aspect Oriented Programming (AOP)", "Object Oriented Programming (OOPs)", "Git/Github"]
     }
 
 

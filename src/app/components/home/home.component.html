@@ -48,8 +48,10 @@
     </div>
 
     <div class="border-b-2 md:border-b-0 md:border-r-2 border-blue-600 p-4">
-      <div class="text-2xl py-2 underline underline-offset-8">Frameworks</div>
-      @for (item of skills.frameworks; track $index) {
+      <div class="text-2xl py-2 underline underline-offset-8">
+        Frameworks/Libraries
+      </div>
+      @for (item of skills['frameworks/Libraries']; track $index) {
       <div>{{ item }}</div>
       }
     </div>
