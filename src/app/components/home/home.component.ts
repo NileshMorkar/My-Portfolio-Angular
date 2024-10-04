@@ -57,7 +57,7 @@ export class HomeComponent {
         "frameworks/Libraries": ["Spring", "SpringBoot", "Asp .Net Core 8", "Flutter", "Angular 17", "Hibernate", "Project Reactor", "Spring WebFlux"],
         programming_languages: ["C/C++", "Java SE", "Java EE", "TypeScript", "JavaScript", "Dart", "C#",],
         databases: ["MySql", "MongoDB", "FireBase", "Redis"],
-        other: ["MicroServices", "` 8Reactive Programming", "Swagger UI", "HTML/CSS/Tailwind CSS", "Software Design Patterns", "Rest API", "Aspect Oriented Programming (AOP)", "Object Oriented Programming (OOPs)", "Git/Github"]
+        other: ["MicroServices", "Reactive Programming", "Swagger UI", "HTML/CSS/Tailwind CSS", "Software Design Patterns", "Rest API", "Aspect Oriented Programming (AOP)", "Object Oriented Programming (OOPs)", "Git/Github"]
     }
 
 
